@@ -28,6 +28,7 @@ body {
 }
 
 header {
+    border-radius: 0px 0px 0px 200px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -58,7 +59,7 @@ nav {
 header ul {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    border-radius: 0 0  0 1000px ;
 }
 
 ul li {
@@ -117,4 +118,72 @@ a#learn {
     background-color: transparent;
     color: white;
     border: 2px solid white;
+}
+
+.first-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-image: url("./images/illustration-editor-desktop.svg");
+    background-repeat: no-repeat;
+    background-position-x: 1260px;
+    margin: 70px 0px;
+}
+
+.first-section h2 {
+    margin-top: 165px;
+}
+
+.inner-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    max-width: 1165px;
+    padding: 50px;
+}
+
+h2.section-heading {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 70px;
+    color: var(--Very-dark-blue-headings);
+}
+
+.left h3 {
+    font-size: 30px;
+    color: var(--Very-dark-blue-headings);
+}
+
+.left p {
+    font-size: 18px;
+    color: var(--Very-dark-grayish-blue-body-copy);
+}
+
+.right {
+    width: 50%;
+}
+
+.right img {
+    position: absolute;
+    top: 0;
+    right: -650px;
+}
+
+/* .right {
+    position: absolute;
+} */
+
+.left {
+    width: 50%;
+}
+
+.left h3 {
+    margin-bottom: 35px;
+}
+
+.left p {
+    margin-bottom: 90px;
 }
