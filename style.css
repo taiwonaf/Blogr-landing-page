@@ -121,6 +121,21 @@ a#learn {
     border: 2px solid white;
 }
 
+a#learn:hover {
+    background-color: white;
+    color: var(--Light-red);
+}
+
+.hero-btn a:hover {
+    background-color: var(--Very-light-red-CTA-hover-background);
+    color: white;
+}
+
+a.sign-up:hover {
+    background-color: var(--Very-light-red-CTA-hover-background);
+    color: white;
+}
+
 .first-section {
     padding-top: 30px;
     display: flex;
@@ -477,6 +492,10 @@ footer ul li a {
         align-items: center;
         text-align: center;
         border-radius: 10px;
+        box-shadow:
+  -0.8px -1.2px 5.3px rgba(0, 0, 0, 0.061),
+  9.8px 14.8px 17.9px rgba(0, 0, 0, 0.081),
+  66px 100px 80px rgba(0, 0, 0, 0.09);
     }
 
     .active .nav-items ul {
@@ -487,7 +506,9 @@ footer ul li a {
     
     .active .nav-items a {
         color: var(--Very-dark-blue-headings);
+        font-weight: 700;
         text-align: center;
+        font-size: 21px;
     }
 
     .drop-link::after {
@@ -503,21 +524,49 @@ footer ul li a {
         display: flex;
         position: static;
         flex-direction: column;
-        align-items: flex-start;
         background-color: white;
         border-radius: 5px;
-        width: 180px;
-        padding: 25px;
         box-shadow: none;
     }
 
+    .dropdown:hover .drop-content ul li {
+        width: 100%;
+    }
+
+    .active .dropdown {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .active .drop-content {
+        width: 100%;
+        display: none;
+    }
+
+    .active .activate .drop-content {
+        display: flex;
+    }
+
+    .active .nav-left .drop-content ul {
+        width: 100%;
+        background-color: rgba(128, 128, 128, 0.1);
+    }
+
     .drop-content ul a {
+        width: 100%;
         font-weight: 700;
-        margin: 0px;
+        margin: 15px;
         font-size: 16px;
         padding: 0px 0px 0px 0px;
         color: rgb(154, 145, 145);
         display: inline-block;
+    }
+
+    .active a.sign-up {
+        background-color: var(--Light-red);
+        color: white;
     }
 
 }
