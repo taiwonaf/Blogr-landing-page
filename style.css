@@ -284,3 +284,53 @@ footer ul li a {
     margin: 10px 0px 10px 0px;
 
 }
+
+.dropdown {
+    position: relative;
+}
+
+.drop-link::after {
+    content: url("./images/icon-arrow-light.svg");
+    margin-left: 10px;
+}
+
+.drop-content ul {
+    display: none;
+}
+
+.dropdown:hover .drop-content ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 5px;
+    width: 180px;
+    padding: 25px;
+    box-shadow:
+  -0.8px -1.2px 5.3px rgba(0, 0, 0, 0.061),
+  9.8px 14.8px 17.9px rgba(0, 0, 0, 0.081),
+  66px 100px 80px rgba(0, 0, 0, 0.09);
+
+
+}
+
+.drop-content ul li {
+    width: 100%;
+}
+
+.drop-content ul a {
+    font-weight: 700;
+    margin: 0px;
+    font-size: 12px;
+    padding: 10px 30px 10px 0px;
+    color: rgb(154, 145, 145);
+    display: inline-block;
+}
+
+.drop-content ul a:hover {
+    color: var(--Very-dark-grayish-blue-body-copy);
+}
