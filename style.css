@@ -564,6 +564,12 @@ footer ul li a {
         display: inline-block;
     }
 
+    .active .nav-items .nav-right {
+        border-top: 2px solid rgba(128, 128, 128, 0.3);
+        margin-top: 30px;
+        padding-top: 30px;
+    }
+
     .active a.sign-up {
         background-color: var(--Light-red);
         color: white;
